@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      img {
+        width: 350px;
+        height: 350px;
+        transform: perspective(800px) rotateY(20deg);
+        box-shadow: 1px 2px 8px white;
+        -webkit-box-reflect: below 2px
+          linear-gradient(transparent, transparent, #0004);
+
+        /*  */
+        transition: .5s;
+      }
+      .container:hover img{
+        opacity: 0.3;
+      }
+      .container img:hover {
+        transform: perspective(800px) rotateY(0deg);
+
+        
+        opacity: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/1.webp" alt="" />
+      <img src="img/il_fullxfull.4341390936_pe43.webp" alt="" />
+      <img src="img/3.jpg" alt="" />
+    </div>
+  </body>
+</html>
